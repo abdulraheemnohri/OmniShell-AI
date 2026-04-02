@@ -15,6 +15,7 @@ import com.omnishellai.data.db.AppDatabase
 import com.omnishellai.data.db.LogEntry
 import com.omnishellai.data.repository.LoggingRepository
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.text.SimpleDateFormat

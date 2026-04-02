@@ -1,0 +1,7 @@
+android {
+    defaultConfig {
+        python {
+            version = "3.10"
+        }
+    }
+}
