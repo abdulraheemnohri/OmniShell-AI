@@ -1,5 +1,10 @@
 # OmniShell AI
 
+![Build](https://github.com/abdulraheemnohri/OmniShell-AI/actions/workflows/android-ci.yml/badge.svg)
+![License](https://img.shields.io/github/license/abdulraheemnohri/OmniShell-AI)
+![Release](https://img.shields.io/github/v/release/abdulraheemnohri/OmniShell-AI)
+![Platform](https://img.shields.io/badge/platform-Android-brightgreen)
+
 OmniShell AI is an all-in-one Android application that unifies the capabilities of **Termux**, **OpenClaw**, and **Ollama**. Built natively in Kotlin, it leverages **Chaquopy** to execute Python scripts for advanced AI tasks and shell command automation.
 
 ## 🚀 Key Features
@@ -25,12 +30,15 @@ OmniShell AI is an all-in-one Android application that unifies the capabilities 
 - **Colored Status Display**: Quick visual feedback with ✅ Success, ❌ Error, and ⚠️ Warning indicators.
 - **Dark/Light Mode**: Full support for system-wide appearance settings.
 
+## 📡 OTA Updates
+OmniShell AI features an integrated Over-The-Air (OTA) update system. It checks for new releases and provides easy installation to keep you up to date with the latest features and security patches.
+
 ## 🛠 Tech Stack
 
 - **Android Native**: Kotlin / Java (Min SDK 30)
 - **Python Integration**: Chaquopy 16.0.0 (Python 3.10)
 - **Database**: Room Persistence Library (SQLite)
-- **CI/CD**: GitHub Actions for automated testing and APK releases.
+- **DevOps**: "Pro Max" Pipeline with AI Code Review, CodeQL, and Auto-Releases.
 
 ## 📂 Project Structure
 
@@ -50,13 +58,15 @@ OmniShellAI/
 
 ### Local Build
 1. Clone the repository.
-2. Open in Android Studio (Jellyfish or newer recommended).
-3. Ensure you have JDK 21 configured.
+2. Open in Android Studio.
+3. Ensure JDK 21 is configured.
 4. Build using `./gradlew assembleDebug`.
 
 ### CI/CD Workflows
-- **Android CI**: Automatically runs unit tests and builds the debug APK on every push or pull request to the main branch.
-- **Release APK**: Automatically builds and creates a GitHub Release with the APK when a version tag (e.g., `v1.0.0`) is pushed.
+- **Android CI/CD**: Automatically runs tests and builds APK + AAB on every push.
+- **AI Code Review**: Automated feedback on pull requests.
+- **Release APK**: Automated GitHub Releases on tag pushes.
+- **Security**: Continuous CodeQL and Dependency scanning.
 
 ---
 *Created with ❤️ for the OmniShell AI community.*
