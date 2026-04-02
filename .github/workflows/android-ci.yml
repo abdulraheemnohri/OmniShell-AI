@@ -9,6 +9,8 @@ on:
 permissions:
   contents: read
   actions: write
+  checks: write
+  pull-requests: write
 
 jobs:
   build:
@@ -26,6 +28,9 @@ jobs:
 
     - name: Grant Gradle Permission
       run: chmod +x gradlew
+
+    - name: Run Lint
+      run: ./gradlew lintDebug
 
     - name: Run Unit Tests
       run: ./gradlew testDebugUnitTest
